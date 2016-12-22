@@ -14,7 +14,7 @@ p {
 }
 
 .parallax-container {
-  min-height: 480px;
+  min-height: 530px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
@@ -22,6 +22,10 @@ p {
   .parallax-container .section {
     width: 100%;
   }
+
+.s-plx {
+  min-height: 250px !important
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
