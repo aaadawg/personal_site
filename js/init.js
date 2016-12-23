@@ -9,12 +9,6 @@
 
 
 // TEMP SCROLL FOR NAVBAR LINKS
-$("#about-link").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#index-banner").offset().top
-    }, 800);
-});
-
 $("#project-link").click(function() {
     $('html, body').animate({
         scrollTop: $("#project-banner").offset().top
@@ -27,15 +21,15 @@ $("#consulting-link").click(function() {
     }, 800);
 });
 
-$("#contact-link").click(function() {
+$("#student-link").click(function() {
     $('html, body').animate({
-        scrollTop: $("#collab-banner").offset().top
+        scrollTop: $("#student-banner").offset().top
     }, 800);
 });
 
-$("#about-link-side").click(function() {
+$("#contact-link").click(function() {
     $('html, body').animate({
-        scrollTop: $("#index-banner").offset().top
+        scrollTop: $("#collab-banner").offset().top
     }, 800);
 });
 
@@ -48,6 +42,12 @@ $("#project-link-side").click(function() {
 $("#consulting-link-side").click(function() {
     $('html, body').animate({
         scrollTop: $("#consulting-banner").offset().top
+    }, 800);
+});
+
+$("#student-link-side").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#student-banner").offset().top
     }, 800);
 });
 
