@@ -24,7 +24,11 @@ p {
   }
 
 .s-plx {
-  min-height: 250px !important
+  min-height: 250px !important;
+}
+
+.hit {
+  display: none;
 }
 
 @media only screen and (max-width : 992px) {
