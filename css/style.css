@@ -19,9 +19,10 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+
+.parallax-container .section {
+  width: 100%;
+}
 
 .s-plx {
   min-height: 250px !important;
@@ -29,6 +30,14 @@ p {
 
 .hit {
   display: none;
+}
+
+#add-container {
+  margin-top: 10% !important;
+}
+
+#floating-add {
+  margin-top: 1% !important;
 }
 
 @media only screen and (max-width : 992px) {

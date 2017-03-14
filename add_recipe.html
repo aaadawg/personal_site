@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Add Recipe</title>
+
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">RA</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a id="add-recipe-link" href="#"><i class="material-icons left">fast_rewind</i>Main</a></li>
+        <li><a id="settings-link" href="#"><i class="material-icons left">settings</i>Settings</a></li>
+      </ul>
+
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a id="add-recipe-link-side" href="index.html"><i class="material-icons left">fast_rewind</i>Main</a></li>
+        <li><a id="settings-link-side" href="#"><i class="material-icons left">settings</i>Settings</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <!-- RECIPE FORM -->
+
+  <div id="add-container" class="container">
+    <div id="add-section" class="section">
+
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="Placeholder" id="recipe_name" type="text" class="validate">
+              <label for="first_name">Recipe Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="img_url" type="text" class="validate">
+              <label for="last_name">Image Url</label>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="input-field col s6">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Ingredient List</label>
+            </div>
+
+            <div class="input-field col s6">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Direction List</label>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="dist/sweetalert.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+
+  </body>
+</html>

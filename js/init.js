@@ -161,18 +161,30 @@ $("#search").on("keyup change", function() {
     if (query != "") {
         // filter on search
         search_recipe_list = all_recipe_list.filter(filterRecipeOnSearch);
-        console.log(search_recipe_list);
         // redraw
         $(".food").remove();
-        console.log("lol");
         $("#recipe-section").append(buildFullRecipeTable(search_recipe_list));
 
     } else {
         // 
-        console.log("meh");
         $(".food").remove();
         $("#recipe-section").append(FULL_RECIPE_TABLE);
     }
+});
+
+// ALERTS
+
+$("#add-recipe-link").click(function() {
+    swal({   title: "Are you sure?",   
+             text: "You will not be able to recover the drafted Recipe!",   
+             type: "warning",   
+             showCancelButton: true,   
+             confirmButtonColor: "#DD6B55",   
+             confirmButtonText: "Yes, go back to home!",   
+             closeOnConfirm: false }, 
+             function() {      
+                window.location.replace("index.html"); 
+             });
 });
 
 
