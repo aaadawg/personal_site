@@ -38,31 +38,31 @@
     <div id="add-section" class="section">
 
       <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s6">
-              <input placeholder="Placeholder" id="recipe_name" type="text" class="validate">
-              <label for="first_name">Recipe Name</label>
-            </div>
-            <div class="input-field col s6">
-              <input id="img_url" type="text" class="validate">
-              <label for="last_name">Image Url</label>
-            </div>
-          </div>
-          
-          <div class="row">
-            <div class="input-field col s6">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Ingredient List</label>
-            </div>
+        <div class="input-field col s6">
+          <input placeholder="Beef salad" id="recipe_name" type="text" class="validate">
+          <label for="first_name">Recipe Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="www.img_url.com" id="img_url" type="text" class="validate">
+          <label for="last_name">Image Url</label>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="input-field col s6">
+          <textarea placeholder="Chicken..." id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Ingredient List</label>
+        </div>
 
-            <div class="input-field col s6">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Direction List</label>
-            </div>
-          </div>
+        <div class="input-field col s6">
+          <textarea placeholder="Preheat the over to 235..."id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Direction List</label>
+        </div>
+      </div>
 
-        </form>
+
+      <div class="row center">
+        <p id="finish-add" class="btn-large waves-effect waves-light teal lighten-1">Add Recipe</p>
       </div>
 
     </div>
@@ -74,6 +74,7 @@
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
+  <script src="js/add.js"></script>
   <script src="js/init.js"></script>
   <script src="dist/sweetalert.min.js"></script> 
   <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">

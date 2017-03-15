@@ -30,9 +30,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-
 // TEMP SCROLL FOR NAVBAR LINKS
-
 $("#contact-link").click(function() {
     $('html, body').animate({
         scrollTop: $("#contact-banner").offset().top
@@ -40,7 +38,6 @@ $("#contact-link").click(function() {
 });
 
 // GET ARRAY OF RECIPE JSONS
-
 var shrimp_recipe = {
                         "RecipeName": "Shrimp Scampi",
                         "Directions": "Put it in a pot\nstir, stir, stir!",
@@ -103,11 +100,10 @@ function buildCard(recipe_obj) {
 
     recipe_obj["IngredientTable"] = buildTable(recipe_obj["Ingredients"].split("\n"));
 
-    var card_string = "<div class=\"col s12 m4\"><div class=\"card small\"><div class=\"card-image waves-effect waves-block waves-light\"><img class=\"activator\" src=\"{imgURL}\"></div><div class=\"card-content\"><span class=\"card-title activator grey-text text-darken-4\">{RecipeName}<i class=\"material-icons right\">more_vert</i></span><p><a href=\"#\">Get full recipe!</a></p></div><div class=\"card-reveal\"><span class=\"card-title grey-text text-darken-4\">{RecipeName}<i class=\"material-icons right\">close</i></span><p>{IngredientTable}</p></div></div></div>";
+    var card_string = "<div class=\"col s12 m4\"><div class=\"card small\"><div class=\"card-image waves-effect waves-block waves-light\"><img src=\"{imgURL}\"></div><div class=\"card-content\"><span class=\"card-title activator grey-text text-darken-4\">{RecipeName}<i class=\"material-icons right\">more_vert</i></span><p><a href=\"#\">Get full recipe!</a></p></div><div class=\"card-reveal\"><span class=\"card-title grey-text text-darken-4\">{RecipeName}<i class=\"material-icons right\">close</i></span><p>{IngredientTable}</p></div></div></div>";
 
     return card_string.supplant(recipe_obj);
 }
-
 
 function buildFullRecipeTable(recipe_list) {
 
@@ -141,7 +137,6 @@ function buildFullRecipeTable(recipe_list) {
     }
 
     return FULL_TABLE_STR;
-
 }
 
 var FULL_RECIPE_TABLE = buildFullRecipeTable(all_recipe_list);
@@ -172,20 +167,10 @@ $("#search").on("keyup change", function() {
     }
 });
 
-// ALERTS
-
-$("#add-recipe-link").click(function() {
-    swal({   title: "Are you sure?",   
-             text: "You will not be able to recover the drafted Recipe!",   
-             type: "warning",   
-             showCancelButton: true,   
-             confirmButtonColor: "#DD6B55",   
-             confirmButtonText: "Yes, go back to home!",   
-             closeOnConfirm: false }, 
-             function() {      
-                window.location.replace("index.html"); 
-             });
-});
+// window.onpopstate = function(event)
+// {
+//     alert("location: " + document.location + ", state: " + JSON.stringify(event.state));
+// };
 
 
 
